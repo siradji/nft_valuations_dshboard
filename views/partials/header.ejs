@@ -21,8 +21,8 @@
                <p class="text-capitalize stat-name"><%= stat.stat %></p>
                <div class="d-flex flex-row">
                    <p>&#926 <%= stat.value %></p>
-                   <i class="fa-solid fa-arrow-up"></i>
-                   <p class="stat-usd-value">$<%= stat.usdValue %></p>
+                   <i class="<%= stat.price_drop ? "fa-solid fa-arrow-down" : 'fa-solid fa-arrow-up'%>" id="<%= stat.price_drop ? 'priceTickerDown' : 'priceTickerUp'%>"></i>
+                   <p class="stat-usd-value">$<%= stat.usd_value %></p>
                </div>
            </div>
         <% } %>

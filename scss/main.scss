@@ -62,7 +62,11 @@
       background-color: $secondary-color;
     }
 
-    .fa-arrow-up {
+    i.stats-icon {
+      display: none;
+    }
+
+    #priceTickerUp {
       color: $brand-success;
       margin: 0 10px;
       transform: rotate(20deg);
@@ -70,7 +74,13 @@
       width: 9px;
     }
 
-
+    #priceTickerDown {
+      color: $brand-error;
+      margin: 0 10px;
+      transform: rotate(-20deg);
+      height: 9px;
+      width: 9px;
+    }
   }
 
 }
@@ -137,8 +147,6 @@ main {
               background-color: #353547;
               i.fa-chevron-down {
                 color:#ffffff ;
-                width: 10px;
-                height: 6px;
               }
             }
           }
@@ -216,6 +224,10 @@ main {
 
     button.more-info {
       border-radius: 50%;
+      height: 31px;
+      width: 31px;
+      padding: 0;
+
     }
 
     button.active-tab {
