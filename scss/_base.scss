@@ -1,0 +1,20 @@
+$main-font: 'Inter', sans-serif;
+
+html,
+body {
+  height: 100%;
+  font-family: $main-font;
+  -webkit-font-smoothing: antialiased;
+  background-color: #1E1E1E;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #ffffff;
+  font-weight: 400;
+  font-family: $main-font;
+}
