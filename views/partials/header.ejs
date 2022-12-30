@@ -1,0 +1,30 @@
+<header id="dashboardHeader" class="header" data-testid="dashboard_header">
+    <nav class="d-flex flex-row justify-content-between w-100">
+        <h1 data-testid="dashboard_title">Account</h1>
+            <div class="d-flex flex-row">
+                <ul class="d-flex align-items-center flex-row nav-links">
+                    <li>
+                        <a class="nav-link" data-testid="dashboard_link-overview">Overview</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" data-testid="dashboard_link-report">Report</a>
+                    </li>
+                </ul>
+                <button class="more-info-button d-flex flex-row align-items-center justify-content-center" data-testid="dashboard_more_info_button">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </button>
+            </div>
+    </nav>
+    <div class="stats row">
+        <% for(const stat of stats) {%>
+           <div class="stat-item col-sm d-flex flex-row align-items-center justify-content-center">
+               <p class="text-capitalize stat-name"><%= stat.stat %></p>
+               <div class="d-flex flex-row">
+                   <p>&#926 <%= stat.value %></p>
+                   <i class="fa-solid fa-arrow-up"></i>
+                   <p class="stat-usd-value">$<%= stat.usdValue %></p>
+               </div>
+           </div>
+        <% } %>
+    </div>
+</header>
