@@ -1,2 +1,266 @@
 @import "base";
 
+
+.header {
+  width: 100%;
+  overflow-x: hidden;
+
+  nav {
+    padding: 19px 25px;
+
+  }
+  h1 {
+    font-weight: 700;
+    font-size: 32px;
+  }
+
+  ul.nav-links {
+    list-style: none;
+
+    a.nav-link {
+      color: #ffffff;
+      font-size: 16px;
+      font-weight: 500;
+    }
+  }
+
+  button.more-info-button {
+    margin-left: 59px;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: $secondary-color;
+    outline: none;
+    i.fa-ellipsis {
+      color: #79798C;
+      width: 14px;
+    }
+  }
+
+  div.stats {
+    p {
+      margin: 0;
+      padding: 0;
+      font-size: 15px;
+      font-weight: 500;
+    }
+    .stat-item {
+      padding: 20px 0;
+      .stat-name {
+        margin-right: 20px;
+      }
+
+      .stat-usd-value {
+        color: #79798C;
+      }
+    }
+
+    .stat-item:nth-child(odd) {
+      background-color: #1A1A22;
+    }
+    .stat-item:nth-child(even) {
+      background-color: $secondary-color;
+    }
+
+    .fa-arrow-up {
+      color: $brand-success;
+      margin: 0 10px;
+      transform: rotate(20deg);
+      height: 9px;
+      width: 9px;
+    }
+
+
+  }
+
+}
+
+
+main {
+  margin: 30px 75px 0 75px;
+  section.feed-section {
+    border-radius: 2px;
+    background-color: $secondary-color;
+    padding: 0 21px;
+    width: 850px;
+    height: 640px;
+    overflow-y: scroll;
+    h1.section-heading {
+      padding: 25px 0;
+        font-weight: 7000;
+        font-size: 20px;
+    }
+
+    div.feed-item {
+      background-color: $primary-color;
+      margin-bottom: 8px;
+      div.feed-item-left {
+        padding: 15px 18px 18px 18px;
+        width: 35%;
+        border-right: 1px solid #17161C;
+        div.feed-item-left-header {
+          div.feed-item-left-title {
+            h3 {
+              font-size: 15px;
+              font-weight: 700;
+              margin-bottom: 7px;
+            }
+            span {
+              color: #79798C;
+              font-weight: 500;
+              font-size: 12px;
+              text-transform: uppercase;
+            }
+          }
+
+          div.feed-item-left-actions {
+            border-radius: 2px;
+            button {
+              outline: none;
+              border: none;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 36px;
+              height: 40px;
+            }
+            button.feed_add_button {
+              background-color: #282836;
+              i.fa-plus {
+                color: #9452F7;
+                width: 13px;
+                height: 13px;
+              }
+            }
+
+            button.feed_expand_button {
+              background-color: #353547;
+              i.fa-chevron-down {
+                color:#ffffff ;
+                width: 10px;
+                height: 6px;
+              }
+            }
+          }
+        }
+        div.nft_images {
+          margin-top: 18px;
+          img  {
+            height: 30px;
+            width: 30px;
+          }
+        }
+      }
+      div.feed-item-right {
+        width: 65%;
+
+        p {
+          font-size: 12px;
+          font-weight: 500;
+          color: #79798C;
+        }
+
+        div.feed-item-right-header {
+          padding: 20px;
+          border-bottom: 1px solid #17161C;
+          margin-bottom: 18px;
+          h3 {
+            font-size: 15px;
+            font-weight: 700;
+          }
+        }
+
+        div.feed-item-right-bottom  {
+          margin-top: 8px;
+          padding:0 20px 20px 20px;
+          p {
+            text-transform: uppercase;
+          }
+          p.feed-item-right-bottom-value {
+            font-size: 15px;
+
+          }
+          p#profitAbove {
+            color: $brand-success ;
+          }
+          p#profitBelow {
+            color: $brand-error ;
+          }
+        }
+      }
+    }
+
+  }
+
+  section.tab-view {
+    width: 410px;
+    height: 640px;
+    background-color: $secondary-color;
+    margin-left: 30px;
+  }
+
+  div.tab-view-header {
+    padding: 12px 20px;
+    background-color: $primary-color;
+    width: 100%;
+
+    button {
+      border-radius: 31px;
+      color:#79798C;
+      background-color: $secondary-color;
+      padding: 8px 20px;
+      font-weight: 600;
+      font-size: 12px;
+      margin-right: 8px;
+    }
+
+    button.more-info {
+      border-radius: 50%;
+    }
+
+    button.active-tab {
+      background-color: #ffffff;
+      color: $secondary-color;
+    }
+  }
+div.tab-view-content {
+  padding: 25px 20px;
+  h1 {
+    font-size: 15px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 40px;
+  }
+}
+  div.tab-view-items {
+    div.tab-view-item-container {
+      margin-bottom: 25px;
+      .progress {
+        margin-top: 16px;
+        height: 4px;
+        border-radius: 2px;
+        .progress-bar {
+          background-color: #1FA8D1 !important;
+          height: 4px;
+          border-radius: 2px;
+        }
+      }
+    }
+    div.tab-view-item {
+      h3 {
+        font-size: 15px;
+        font-weight: 500;
+        color: #79798C;
+      }
+
+      span {
+        font-size: 15px;
+        font-weight: 700;
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+
+

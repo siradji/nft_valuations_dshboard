@@ -1,18 +1,25 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-<%- include('partials/head.ejs') -%>
+<%- include('partials/head.ejs', {stats}); -%>
 <body>
 
 <noscript>
     <h3>Please enable JavaScript in order to view this site properly.</h3>
 </noscript>
 
-<header>
-    <nav></nav>
-</header>
+<%- include('partials/header.ejs') -%>
 
 <main>
-  <h1>Hello world</h1>
+    <div class="d-flex flex-row">
+        <section class="feed-section">
+            <h1 class="section-heading">24 hours feed</h1>
+            <%for(let feedItem of feed){%>
+                <%-include('partials/feed.ejs',{feed: feedItem}); %>
+            <%}%>
+        </section>
+        <%- include('partials/tabView.ejs', {tabStats}); -%>
+    </div>
+
 </main>
 
 </body>

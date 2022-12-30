@@ -1,10 +1,12 @@
 $main-font: 'Inter', sans-serif;
+$secondary-color: #17161C;
+$primary-color:#1D1D26;
+$brand-success:#3CD660;
+$brand-error: #BE3D2C;
 
 html,
 body {
   height: 100%;
-  font-family: $main-font;
-  -webkit-font-smoothing: antialiased;
   background-color: #1E1E1E;
 }
 
@@ -17,4 +19,27 @@ h6 {
   color: #ffffff;
   font-weight: 400;
   font-family: $main-font;
+}
+
+a,
+p,
+button,
+textarea {
+  color: #ffffff;
+  font-weight: 400;
+  font-family: $main-font;
+}
+h1,
+h2,
+h3,
+span,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
 }
