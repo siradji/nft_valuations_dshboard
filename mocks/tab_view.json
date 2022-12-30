@@ -1,0 +1,29 @@
+{
+"whales": {
+  "est_profile": "781.9K",
+  "est_loss": "781.9K",
+  "gas_fees": "781.9K",
+  "bought": "781.9K",
+  "listed": "781.9K",
+  "sold": "781.9K",
+  "transferred": "781.9K"
+},
+  "all": {
+    "est_profile": "781.9K",
+    "est_loss": "781.9K",
+    "gas_fees": "781.9K",
+    "bought": "781.9K",
+    "listed": "781.9K",
+    "sold": "781.9K",
+    "transferred": "781.9K"
+  },
+  "new": {
+    "est_profile": "781.9K",
+    "est_loss": "781.9K",
+    "gas_fees": "781.9K",
+    "bought": "781.9K",
+    "listed": "781.9K",
+    "sold": "781.9K",
+    "transferred": "781.9K"
+  }
+}

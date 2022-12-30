@@ -1,0 +1,32 @@
+[
+ {
+   "stat": "volume",
+   "value": "60.94",
+  "usdValue": "171143",
+  "24HoursChange": "12"
+},
+   {
+  "stat": "profits",
+  "value": "60.94",
+  "usdValue": "171143",
+  "24HoursChange": "-40"
+},
+  {
+    "stat": "loses",
+    "value": "60.94",
+  "usdValue": "171,143",
+  "24HoursChange": "12"
+},
+   {
+     "stat": "active wallets",
+     "value": "60.94",
+  "usdValue": "171,143",
+  "24HoursChange": "12"
+},
+   {
+     "stat": "new wallets",
+  "value": "60.94",
+  "usdValue": "171,143",
+  "24HoursChange": "12"
+}
+]

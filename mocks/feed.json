@@ -1,0 +1,57 @@
+[
+  {
+    "is_below_nfti":false,
+    "timestap": "5 MINUTES AGO",
+    "value": "245.2",
+    "usd_value": "442,102",
+    "nfti": "760.12",
+    "adj_floor": "720.42",
+    "est_profit": "48.2",
+    "nft_name": "hodlponkz.eth",
+    "ratio": 310
+  },
+  {
+    "is_below_nfti": true,
+    "timestap": "5 MINUTES AGO",
+    "value": "245.2",
+    "usd_value": "442,102",
+    "nfti": "760.12",
+    "adj_floor": "720.42",
+    "est_profit": "48.2",
+    "nft_name": "hodlponkz.eth",
+    "ratio":  110
+  },
+  {
+    "is_below_nfti": true,
+    "timestap": "5 MINUTES AGO",
+    "value": "245.2",
+    "usd_value": "442,102",
+    "nfti": "760.12",
+    "adj_floor": "720.42",
+    "est_profit": "48.2",
+    "nft_name": "hodlponkz.eth",
+    "ratio":  310
+  },
+  {
+    "is_below_nfti": false,
+    "timestap": "20 MINUTES AGO",
+    "value": "225.2",
+    "usd_value": "142,102",
+    "nfti": "760.12",
+    "adj_floor": "720.42",
+    "est_profit": "48.2",
+    "nft_name": "hodlponkz.eth",
+    "ratio":  310
+  },
+  {
+    "is_below_nfti": false,
+    "timestap": "5 MINUTES AGO",
+    "value": "245.2",
+    "usd_value": "442,102",
+    "nfti": "760.12",
+    "adj_floor": "720.42",
+    "est_profit": "48.2",
+    "nft_name": "hodlponkz.eth",
+    "ratio":  220
+  }
+]
