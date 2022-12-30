@@ -1,0 +1,45 @@
+    <div class="d-flex flex-row  w-100 feed-item">
+        <div class="feed-item-left">
+            <div class="feed-item-left-header d-flex flex-row justify-content-between align-items-center">
+                <div class="d-flex flex-column feed-item-left-title">
+                    <h3><%= feed.nft_name %></h3>
+                    <span><%= feed.timestamp %></span>
+                </div>
+                <div class="d-flex flex-row align-items-center justify-content-center feed-item-left-actions">
+                    <button class="feed_add_button">
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                    <button class="feed_expand_button">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="d-flex flex-row nft_images">
+                <img alt="nft_image"  src="/assets/png/nft_image.png"/>
+                <img alt="nft_image"  src="/assets/png/nft_image.png"/>
+                <img alt="nft_image"  src="/assets/png/nft_image.png"/>
+                <img alt="nft_image"  src="/assets/png/nft_image.png"/>
+                <img alt="nft_image"  src="/assets/png/nft_image.png"/>
+            </div>
+        </div>
+        <div class="feed-item-right">
+            <div class="feed-item-right-header d-flex flex-row align-items-center justify-content-between">
+                <h3>bought for Ξ<%= feed.value %> ($<%= feed.usd_value%>)</h3>
+                <p><%=feed.ratio %>%  <%= feed.is_below_nfti ? 'below' : 'above'%> NFTi</p>
+            </div>
+            <div class="row feed-item-right-bottom">
+                <div class="col d-flex flex-column">
+                    <p>NFTi</p>
+                    <p class="feed-item-right-bottom-value">Ξ<%= feed.nfti%></p>
+                </div>
+                <div class="col d-flex flex-column">
+                    <p>adj. floor</p>
+                    <p class="feed-item-right-bottom-value">Ξ<%= feed.adj_floor %></p>
+                </div>
+                <div class="col-6 d-flex flex-column align-items-end">
+                    <p>Est. profit</p>
+                    <p class="feed-item-right-bottom-value" id="<%= feed.is_below_nfti ? 'profitBelow' : 'profitAbove' %>">Ξ<%= feed.est_profit%></p>
+                </div>
+            </div>
+        </div>
+    </div>
